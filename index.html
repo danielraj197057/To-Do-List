@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/28a9d8948a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="input-bar">
+            <input type="text" class="input-todo" id="input-todo" placeholder="Enter the Text">
+            <button onclick="add()" class="add"> Click to add </button>
+            <button onclick="rem_all()" class="rem"><i class="far fa-trash-alt"></i> Remove All </button>
+        </div>
+
+        <div class="todo-list">
+            <i class="fas fa-clipboard-check" style="float: left;margin-left: 50px;margin-top:17px;font-size: 27px;"></i>
+            <h2 class="head">To-Do-List</h2>
+                    <div class="list" id="list">          
+            </div>
+        </div>
+        <h5 style="margin-top:10px; color: whitesmoke; font-weight: 300;">* Click on the task to mark as complete</h5>
+    </div>
+    <script src="index.js"></script>
+
+</body>
+</html>

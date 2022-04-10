@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(40deg, rgb(179, 27, 108), rgb(63, 119, 209));
+    align-items: center;
+    text-align: center;
+}
+.input-bar{
+    padding-top: 35px;
+    padding-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    padding-right:47px;
+    
+}
+.input-todo{
+    border: none;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 200;
+    outline: none;
+    width: 300px;
+    margin-left: 50px;
+}
+.add,.rem{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px;
+    margin-left: 5px;
+    height: 40px;
+    width: 120px;
+    border-radius:3px;
+    color: white;
+    background-color: black;
+}
+.rem{
+    width: 150px;
+    margin-left: 5px;
+}
+.rem i{
+    padding-right: 5px;
+}
+.todo-list{
+    background-color: rgb(230, 216, 216);
+    height: 350px;
+    width: 40vw;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    text-align: center;
+    align-items: center;
+    border-radius: 17px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.todo-list::-webkit-scrollbar {
+    display: none;
+  }
+.head{
+    font-weight: 500;
+    color: rgb(49, 47, 47);
+    position: relative;
+    margin-top: 5px;
+    margin-right: 55px;
+}
+.head::after{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 14vw;
+    min-width: 150px;
+    background-color: rgb(69, 201, 98);
+    bottom: -7px;
+    left: 37.5%;
+    border-radius: 1px;
+}
+.list{
+    margin-top: 20px;
+    border-top: 0.2px solid rgb(204, 199, 199);
+}
+.items{
+    border-bottom:0.2px solid rgb(204, 199, 199);
+    padding-top: 4px;
+    margin-top: 5px;
+    padding-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.completed{
+    font-size: 27px;
+    margin-top: 4px;
+    accent-color: rgb(45, 187, 90);
+    cursor: pointer;
+}
+.text-field{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+.trash{
+    font-size: 15px;
+    margin-top: 3px;
+    cursor: pointer;
+    position: sticky;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in all 0.3s;
+}
+.items:hover .trash{
+    visibility: visible;
+    opacity: 1;
+}
+.complete h4{
+    color: rgb(29, 174, 34);
+}
+
+label{
+   padding-left:20px;
+   font-size: 14px;
+   position: absolute;
+   font-weight: 400;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .input-bar button{
+        margin-top: 20px;
+        margin-left:35px ;
+    }
+  }
